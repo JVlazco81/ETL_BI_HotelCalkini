@@ -1,0 +1,2488 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="3/27/2025 8:06:48 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="JVLAPTOP"
+  DTS:CreatorName="JVLAPTOP\Jairo"
+  DTS:DTSID="{75AB9D36-4EC8-4D89-AA89-26BC3B5BD8BD}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.0"
+  DTS:LocaleID="2058"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="38"
+  DTS:VersionGUID="{E92DCE02-B1FF-4230-AE39-578D54311A5F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{26108E37-D3CE-4E5D-8C73-E6EC6B5EEFC2}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Lo0ps\OneDrive\Desktop\datos_simulados.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{BAF791E4-E963-41FC-89E7-DA2849C08AEF}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Lo0ps\OneDrive\Desktop\datos_simulados.xls;Extended Properties=&quot;EXCEL 8.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9217F218-FBE5-4ECF-A7F0-9B11D1FD2335}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Lo0ps\OneDrive\Desktop\datos_simulados.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{ADEAFBC6-6E55-4EF6-8D63-BA7DCA95A913}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Lo0ps\OneDrive\Desktop\datos_simulados.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{4CBCFFA4-6701-4A24-8553-5CE2A9ABEEE7}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Lo0ps\Downloads\ETL_Datos_Ejemplo.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{55415B7B-8E56-4C58-9113-85BECF5EE521}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Lo0ps\Downloads\ETL_Datos_Ejemplo.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{75E063A1-9BE2-4A82-B289-98EF5109FE43}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\Lo0ps\OneDrive\Desktop\ETL_Datos_Ejemplo.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prueba.root]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{C7ADBF54-2BD1-45FA-AC6D-D4F219C50835}"
+      DTS:ObjectName="prueba.root">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=root;Dsn=prueba;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA047DhmA3V02KSgya4p9bVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAW9WzgEzd6no2KQTm/B83ILR/UdOU9g73qQIMgk6LLVQAAAAAOgAAAAAIAACAAAACzfEYMeeEn3uE6x6LhsMfO6GlpGIYQ+x3wdrx/vENtPBAAAADS95cELXNpOkthR+M99GzzQAAAAM0ZgIW9/xoPkfWCY1h3IdIkWDTj0ff535+VqAUnTU728Is+Y0Ra58KziTQV8PaSTS6q/QgVbDCstdgaA2CdCZQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prueba.root 1]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{67D1A32A-F640-4DE7-940F-12CC152C8CC3}"
+      DTS:ObjectName="prueba.root 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=root;Dsn=prueba;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA047DhmA3V02KSgya4p9bVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD84EKT515fw1Ucr42xl3Us6juJUb9c1sZCDzoMYfzMiAAAAAAOgAAAAAIAACAAAAD+FTyI0gADGzZZsBAhKRXRUxAxrheV09qqf7nypqZ12RAAAAC7KC7qR6BkFqdtw0CkuZjVQAAAAMltNsjvBfHVzQZbCd7Zln8CIcMpmyG9nMbykEoRoun9ofqpCFYvrVUH5irh4/WHJmAWMmWRSHzYL6C/3wtxinM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prueba.root 2]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{6CEF2FC0-2D07-4A80-9016-17D4C0FBDC3F}"
+      DTS:ObjectName="prueba.root 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=root;Dsn=prueba;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA047DhmA3V02KSgya4p9bVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACelbWbYrZ0jULG7L3VvtfJ1chIih2KRs3x0FcKYcOA6QAAAAAOgAAAAAIAACAAAACZs9vVhimMiZlFrZZQ8o4zIQDveOs1/Em8DJ2sw0YZixAAAAC0jWbOBWaR31abk5wjQV85QAAAAKaLNib+hWC1CH3+6Jw+9QgLgIj9xr32prVRyE6+k9tKPIsRXfvCqevEtKZLluYRHwoIWZbH9SYXXsIfaYuNs/Y</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prueba.root 3]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{6DDB6579-8673-4B61-B6D9-DB1BD69A7D0C}"
+      DTS:ObjectName="prueba.root 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=root;Dsn=prueba;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA047DhmA3V02KSgya4p9bVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAZuGlfhc2fsNUnS+tU6QiYa8inG7+2KuvGhgbPutFAWQAAAAAOgAAAAAIAACAAAADjX9wggaPejArSgmXPYN6yn1606MEjSTvlpTpGLsa2RBAAAAA4htcbDUgvQpa4bwzZFeexQAAAALHGX2/vUYKEVwZOtgbyc4QUsCCPKeyUXBjd2oQxN24BLNW45xwnyvI6zqj64PLbHWjWZT4IEur8MWjC4gdUfnk</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prueba.root 4]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{5953A51D-A7CE-4FE2-960E-32FDD701525A}"
+      DTS:ObjectName="prueba.root 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="uid=root;Dsn=prueba;">
+          <DTS:Password
+            DTS:Name="pwd"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA047DhmA3V02KSgya4p9bVgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABsZzO7mHMy4eDPSinHeF9PxljaWbuHJR3G+6Q9VLLnzAAAAAAOgAAAAAIAACAAAAAac8CLfuQjpII0pnum7CjrmDqmWEI7yWU2lZgMyA0l4RAAAACMTTYUkv4d91rWfk2vKs+7QAAAAJj5Ao+91/zSdv0pW3HH+KJNvWC1ckEL2m7DLQS//9vPi6/z1C0JgR5PWK3CX2ldQ04jCqgOSiGCA5ePPBsogHs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[prueba2]"
+      DTS:CreationName="ODBC"
+      DTS:DTSID="{6CEA2E2F-0D20-446A-B5D5-F145CF432A5E}"
+      DTS:ObjectName="prueba2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Dsn=prueba2;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\fact_mermaproducto"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{9DFA491B-69E3-4DD3-BB9F-8E35001AB0AC}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="fact_mermaproducto"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\fact_mermaproducto\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">fact_merma$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\fact_mermaproducto\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[producto_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[producto_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[producto_id]"
+                      name="producto_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_compra_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tiempo_compra_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_compra_id]"
+                      name="tiempo_compra_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_caducidad_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tiempo_caducidad_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_caducidad_id]"
+                      name="tiempo_caducidad_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_inspeccion_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tiempo_inspeccion_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_inspeccion_id]"
+                      name="tiempo_inspeccion_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[almacen_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[almacen_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[almacen_id]"
+                      name="almacen_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[motivo_id]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[motivo_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[motivo_id]"
+                      name="motivo_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tasa_merma]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tasa_merma]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tasa_merma]"
+                      name="tasa_merma"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[nivel_inventario]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[nivel_inventario]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[nivel_inventario]"
+                      name="nivel_inventario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[rotacion_inventario]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[rotacion_inventario]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[rotacion_inventario]"
+                      name="rotacion_inventario"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[costo_productos_desechados]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[costo_productos_desechados]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[costo_productos_desechados]"
+                      name="costo_productos_desechados"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[producto_id]"
+                      dataType="r8"
+                      name="producto_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tiempo_compra_id]"
+                      dataType="r8"
+                      name="tiempo_compra_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tiempo_caducidad_id]"
+                      dataType="r8"
+                      name="tiempo_caducidad_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tiempo_inspeccion_id]"
+                      dataType="r8"
+                      name="tiempo_inspeccion_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[almacen_id]"
+                      dataType="r8"
+                      name="almacen_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[motivo_id]"
+                      dataType="r8"
+                      name="motivo_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[tasa_merma]"
+                      dataType="r8"
+                      name="tasa_merma" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[nivel_inventario]"
+                      dataType="r8"
+                      name="nivel_inventario" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[rotacion_inventario]"
+                      dataType="r8"
+                      name="rotacion_inventario" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].ExternalColumns[costo_productos_desechados]"
+                      dataType="r8"
+                      name="costo_productos_desechados" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[producto_id]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[producto_id]"
+                      name="producto_id" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tiempo_compra_id]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tiempo_compra_id]"
+                      name="tiempo_compra_id" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tiempo_caducidad_id]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tiempo_caducidad_id]"
+                      name="tiempo_caducidad_id" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tiempo_inspeccion_id]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tiempo_inspeccion_id]"
+                      name="tiempo_inspeccion_id" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[almacen_id]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[almacen_id]"
+                      name="almacen_id" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[motivo_id]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[motivo_id]"
+                      name="motivo_id" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tasa_merma]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[tasa_merma]"
+                      name="tasa_merma" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[nivel_inventario]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[nivel_inventario]"
+                      name="nivel_inventario" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[rotacion_inventario]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[rotacion_inventario]"
+                      name="rotacion_inventario" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[costo_productos_desechados]"
+                      dataType="r8"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[costo_productos_desechados]"
+                      name="costo_productos_desechados" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\fact_mermaproducto\ODBC Destination"
+              componentClassID="Microsoft.SSISODBCDst"
+              contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="ODBC Destination"
+              name="ODBC Destination"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The name of the table to be fetched."
+                  expressionType="Notify"
+                  name="TableName">fact_mermaproductos_no_perecederos</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows fetched per batch."
+                  expressionType="Notify"
+                  name="BatchSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of rows inserted under the same transaction."
+                  expressionType="Notify"
+                  name="TransactionSize">1000</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines the chunk size allocation for LOB columns"
+                  expressionType="Notify"
+                  name="LobChunkSize">32768</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                  expressionType="Notify"
+                  name="StatementTimeout">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The code page to use when code page information is unavailable from the data source."
+                  expressionType="Notify"
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Int32"
+                  description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                  expressionType="Notify"
+                  name="InsertMethod">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The ODBC C data type for binding numeric data."
+                  expressionType="Notify"
+                  name="BindNumericAs">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                  expressionType="Notify"
+                  name="BindCharColumnsAs">0</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\fact_mermaproducto\ODBC Destination.Connections[ODBCConnection]"
+                  connectionManagerID="Package.ConnectionManagers[prueba2]"
+                  connectionManagerRefId="Package.ConnectionManagers[prueba2]"
+                  description="The ODBC runtime connection used to access the database."
+                  name="ODBCConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ODBC Destination Input"
+                  truncationRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[producto_id]"
+                      cachedDataType="r8"
+                      cachedName="producto_id"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[producto_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[producto_id]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[tiempo_compra_id]"
+                      cachedDataType="r8"
+                      cachedName="tiempo_compra_id"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_compra_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_compra_id]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[tiempo_caducidad_id]"
+                      cachedDataType="r8"
+                      cachedName="tiempo_caducidad_id"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_caducidad_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_caducidad_id]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[tiempo_inspeccion_id]"
+                      cachedDataType="r8"
+                      cachedName="tiempo_inspeccion_id"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_inspeccion_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tiempo_inspeccion_id]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[almacen_id]"
+                      cachedDataType="r8"
+                      cachedName="almacen_id"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[almacen_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[almacen_id]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[motivo_id]"
+                      cachedDataType="r8"
+                      cachedName="motivo_id"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[motivo_id]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[motivo_id]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[tasa_merma]"
+                      cachedDataType="r8"
+                      cachedName="tasa_merma"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tasa_merma]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[tasa_merma]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[nivel_inventario]"
+                      cachedDataType="r8"
+                      cachedName="nivel_inventario"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nivel_inventario]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[nivel_inventario]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[rotacion_inventario]"
+                      cachedDataType="r8"
+                      cachedName="rotacion_inventario"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[rotacion_inventario]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[rotacion_inventario]" />
+                    <inputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].Columns[costo_productos_desechados]"
+                      cachedDataType="r8"
+                      cachedName="costo_productos_desechados"
+                      externalMetadataColumnId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[costo_productos_desechados]"
+                      lineageId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output].Columns[costo_productos_desechados]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[id]"
+                      dataType="i4"
+                      name="id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[producto_id]"
+                      dataType="i4"
+                      name="producto_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_compra_id]"
+                      dataType="i4"
+                      name="tiempo_compra_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_caducidad_id]"
+                      dataType="i4"
+                      name="tiempo_caducidad_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_inspeccion_id]"
+                      dataType="i4"
+                      name="tiempo_inspeccion_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[almacen_id]"
+                      dataType="i4"
+                      name="almacen_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[motivo_id]"
+                      dataType="i4"
+                      name="motivo_id" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tasa_merma]"
+                      dataType="numeric"
+                      name="tasa_merma"
+                      precision="5"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nivel_inventario]"
+                      dataType="i4"
+                      name="nivel_inventario" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[rotacion_inventario]"
+                      dataType="numeric"
+                      name="rotacion_inventario"
+                      precision="10"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[costo_productos_desechados]"
+                      dataType="numeric"
+                      name="costo_productos_desechados"
+                      precision="10"
+                      scale="2" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\fact_mermaproducto\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ODBC Destination Error Output"
+                  synchronousInputId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\fact_mermaproducto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\fact_mermaproducto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\fact_mermaproducto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\fact_mermaproducto.Paths[Excel Source Output]"
+              endId="Package\fact_mermaproducto\ODBC Destination.Inputs[ODBC Destination Input]"
+              name="Excel Source Output"
+              startId="Package\fact_mermaproducto\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{72F78EC8-1D4A-49CC-BC59-1B628E65B26B}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\dim_almacen"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{42253C19-C280-454F-9FFD-0ABFA4EBEA81}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="dim_almacen"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\dim_almacen\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">dim_almacen$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_almacen\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].Columns[nombre_almacen]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre_almacen]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].Columns[nombre_almacen]"
+                          name="nombre_almacen"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].Columns[ubicacion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].ExternalColumns[ubicacion]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].Columns[ubicacion]"
+                          name="ubicacion"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre_almacen]"
+                          dataType="wstr"
+                          length="255"
+                          name="nombre_almacen" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].ExternalColumns[ubicacion]"
+                          dataType="wstr"
+                          length="255"
+                          name="ubicacion" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[nombre_almacen]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[nombre_almacen]"
+                          name="nombre_almacen" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[ubicacion]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Error Output].Columns[ubicacion]"
+                          name="ubicacion" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\dim_almacen\ODBC Destination"
+                  componentClassID="Microsoft.SSISODBCDst"
+                  contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="ODBC Destination"
+                  name="ODBC Destination"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The name of the table to be fetched."
+                      expressionType="Notify"
+                      name="TableName">dim_almacen</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows fetched per batch."
+                      expressionType="Notify"
+                      name="BatchSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of rows inserted under the same transaction."
+                      expressionType="Notify"
+                      name="TransactionSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines the chunk size allocation for LOB columns"
+                      expressionType="Notify"
+                      name="LobChunkSize">32768</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                      expressionType="Notify"
+                      name="StatementTimeout">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The code page to use when code page information is unavailable from the data source."
+                      expressionType="Notify"
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                      expressionType="Notify"
+                      name="InsertMethod">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The ODBC C data type for binding numeric data."
+                      expressionType="Notify"
+                      name="BindNumericAs">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                      expressionType="Notify"
+                      name="BindCharColumnsAs">0</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_almacen\ODBC Destination.Connections[ODBCConnection]"
+                      connectionManagerID="Package.ConnectionManagers[prueba2]"
+                      connectionManagerRefId="Package.ConnectionManagers[prueba2]"
+                      description="The ODBC runtime connection used to access the database."
+                      name="ODBCConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ODBC Destination Input"
+                      truncationRowDisposition="FailComponent">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].Columns[nombre_almacen]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="nombre_almacen"
+                          externalMetadataColumnId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nombre_almacen]"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].Columns[nombre_almacen]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].Columns[ubicacion]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="ubicacion"
+                          externalMetadataColumnId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[ubicacion]"
+                          lineageId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output].Columns[ubicacion]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[almacen_id]"
+                          dataType="i4"
+                          name="almacen_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nombre_almacen]"
+                          dataType="wstr"
+                          length="100"
+                          name="nombre_almacen" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[ubicacion]"
+                          dataType="wstr"
+                          length="100"
+                          name="ubicacion" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_almacen\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ODBC Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_almacen\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_almacen\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_almacen\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\dim_almacen.Paths[Excel Source Output]"
+                  endId="Package\Sequence Container\dim_almacen\ODBC Destination.Inputs[ODBC Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\Sequence Container\dim_almacen\Excel Source.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\dim_motivomerma"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{E4BF81DF-E5C0-4BB0-AF11-C82046CEC8F8}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="dim_motivomerma"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\dim_motivomerma\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">dim_motivomerma$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_motivomerma\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].Columns[motivo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].ExternalColumns[motivo]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].Columns[motivo]"
+                          name="motivo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].Columns[descripcion]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].ExternalColumns[descripcion]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].Columns[descripcion]"
+                          name="descripcion"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].ExternalColumns[motivo]"
+                          dataType="wstr"
+                          length="255"
+                          name="motivo" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].ExternalColumns[descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          name="descripcion" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[motivo]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[motivo]"
+                          name="motivo" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[descripcion]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[descripcion]"
+                          name="descripcion" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\dim_motivomerma\ODBC Destination"
+                  componentClassID="Microsoft.SSISODBCDst"
+                  contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="ODBC Destination"
+                  name="ODBC Destination"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The name of the table to be fetched."
+                      expressionType="Notify"
+                      name="TableName">dim_motivomerma</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows fetched per batch."
+                      expressionType="Notify"
+                      name="BatchSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of rows inserted under the same transaction."
+                      expressionType="Notify"
+                      name="TransactionSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines the chunk size allocation for LOB columns"
+                      expressionType="Notify"
+                      name="LobChunkSize">32768</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                      expressionType="Notify"
+                      name="StatementTimeout">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The code page to use when code page information is unavailable from the data source."
+                      expressionType="Notify"
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                      expressionType="Notify"
+                      name="InsertMethod">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The ODBC C data type for binding numeric data."
+                      expressionType="Notify"
+                      name="BindNumericAs">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                      expressionType="Notify"
+                      name="BindCharColumnsAs">0</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Connections[ODBCConnection]"
+                      connectionManagerID="Package.ConnectionManagers[prueba2]"
+                      connectionManagerRefId="Package.ConnectionManagers[prueba2]"
+                      description="The ODBC runtime connection used to access the database."
+                      name="ODBCConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ODBC Destination Input"
+                      truncationRowDisposition="FailComponent">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].Columns[motivo]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="motivo"
+                          externalMetadataColumnId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[motivo]"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].Columns[motivo]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].Columns[descripcion]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="descripcion"
+                          externalMetadataColumnId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[descripcion]"
+                          lineageId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output].Columns[descripcion]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[motivo_id]"
+                          dataType="i4"
+                          name="motivo_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[motivo]"
+                          dataType="wstr"
+                          length="50"
+                          name="motivo" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[descripcion]"
+                          dataType="nText"
+                          name="descripcion" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ODBC Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\dim_motivomerma.Paths[Excel Source Output]"
+                  endId="Package\Sequence Container\dim_motivomerma\ODBC Destination.Inputs[ODBC Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\Sequence Container\dim_motivomerma\Excel Source.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\dim_producto"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{E0E5120F-FFB4-43A9-9640-216EBC7BAFFE}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="dim_producto"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\dim_producto\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">dim_producto$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_producto\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[nombre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[nombre]"
+                          name="nombre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[categoria]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].ExternalColumns[categoria]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[categoria]"
+                          name="categoria"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[proveedor]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].ExternalColumns[proveedor]"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[proveedor]"
+                          name="proveedor"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].ExternalColumns[nombre]"
+                          dataType="wstr"
+                          length="255"
+                          name="nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].ExternalColumns[categoria]"
+                          dataType="wstr"
+                          length="255"
+                          name="categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].ExternalColumns[proveedor]"
+                          dataType="wstr"
+                          length="255"
+                          name="proveedor" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[nombre]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[nombre]"
+                          name="nombre" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[categoria]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[categoria]"
+                          name="categoria" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[proveedor]"
+                          dataType="wstr"
+                          length="255"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[proveedor]"
+                          name="proveedor" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\dim_producto\ODBC Destination"
+                  componentClassID="Microsoft.SSISODBCDst"
+                  contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="ODBC Destination"
+                  name="ODBC Destination"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The name of the table to be fetched."
+                      expressionType="Notify"
+                      name="TableName">dim_producto</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows fetched per batch."
+                      expressionType="Notify"
+                      name="BatchSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of rows inserted under the same transaction."
+                      expressionType="Notify"
+                      name="TransactionSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines the chunk size allocation for LOB columns"
+                      expressionType="Notify"
+                      name="LobChunkSize">32768</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                      expressionType="Notify"
+                      name="StatementTimeout">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The code page to use when code page information is unavailable from the data source."
+                      expressionType="Notify"
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                      expressionType="Notify"
+                      name="InsertMethod">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The ODBC C data type for binding numeric data."
+                      expressionType="Notify"
+                      name="BindNumericAs">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                      expressionType="Notify"
+                      name="BindCharColumnsAs">0</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_producto\ODBC Destination.Connections[ODBCConnection]"
+                      connectionManagerID="Package.ConnectionManagers[prueba2]"
+                      connectionManagerRefId="Package.ConnectionManagers[prueba2]"
+                      description="The ODBC runtime connection used to access the database."
+                      name="ODBCConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ODBC Destination Input"
+                      truncationRowDisposition="FailComponent">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].Columns[nombre]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="nombre"
+                          externalMetadataColumnId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nombre]"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[nombre]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].Columns[categoria]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="categoria"
+                          externalMetadataColumnId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[categoria]"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[categoria]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].Columns[proveedor]"
+                          cachedDataType="wstr"
+                          cachedLength="255"
+                          cachedName="proveedor"
+                          externalMetadataColumnId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[proveedor]"
+                          lineageId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output].Columns[proveedor]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[producto_id]"
+                          dataType="i4"
+                          name="producto_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[nombre]"
+                          dataType="wstr"
+                          length="100"
+                          name="nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[categoria]"
+                          dataType="wstr"
+                          length="50"
+                          name="categoria" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[proveedor]"
+                          dataType="wstr"
+                          length="100"
+                          name="proveedor" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_producto\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ODBC Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_producto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_producto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_producto\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\dim_producto.Paths[Excel Source Output]"
+                  endId="Package\Sequence Container\dim_producto\ODBC Destination.Inputs[ODBC Destination Input]"
+                  name="Excel Source Output"
+                  startId="Package\Sequence Container\dim_producto\Excel Source.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\dim_tiempo"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6BC4609D-9D9E-4AC9-95D3-0E0B0443B12F}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="dim_tiempo"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\dim_tiempo\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\dim_tiempo\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Derived Column.Inputs[Derived Column Input].Columns[fecha]"
+                          cachedDataType="date"
+                          cachedName="fecha"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[fecha]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Sequence Container\dim_tiempo\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Output].Columns[fecha_sin_hora]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Output].Columns[fecha_sin_hora]"
+                          name="fecha_sin_hora"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)#{Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[fecha]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)fecha</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Sequence Container\dim_tiempo\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\dim_tiempo\Excel Source"
+                  componentClassID="Microsoft.ExcelSource"
+                  contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Excel Source"
+                  name="Excel Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">dim_tiempo$</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mapping from parameters in the SQL command to variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_tiempo\Excel Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 6]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output]"
+                      name="Excel Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[fecha]"
+                          dataType="date"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[fecha]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[fecha]"
+                          name="fecha"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[anio]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[anio]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[anio]"
+                          name="anio"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[mes]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[mes]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[mes]"
+                          name="mes"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[dia]"
+                          dataType="r8"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[dia]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[dia]"
+                          name="dia"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[fecha]"
+                          dataType="date"
+                          name="fecha" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[anio]"
+                          dataType="r8"
+                          name="anio" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[mes]"
+                          dataType="r8"
+                          name="mes" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].ExternalColumns[dia]"
+                          dataType="r8"
+                          name="dia" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output]"
+                      isErrorOut="true"
+                      name="Excel Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[fecha]"
+                          dataType="date"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[fecha]"
+                          name="fecha" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[anio]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[anio]"
+                          name="anio" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[mes]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[mes]"
+                          name="mes" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[dia]"
+                          dataType="r8"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[dia]"
+                          name="dia" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\dim_tiempo\ODBC Destination"
+                  componentClassID="Microsoft.SSISODBCDst"
+                  contactInfo="ODBC Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="ODBC Destination"
+                  name="ODBC Destination"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The name of the table to be fetched."
+                      expressionType="Notify"
+                      name="TableName">dim_tiempo</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows fetched per batch."
+                      expressionType="Notify"
+                      name="BatchSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of rows inserted under the same transaction."
+                      expressionType="Notify"
+                      name="TransactionSize">1000</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines the chunk size allocation for LOB columns"
+                      expressionType="Notify"
+                      name="LobChunkSize">32768</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds to wait for an SQL statement to execute before returning to the application."
+                      expressionType="Notify"
+                      name="StatementTimeout">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The code page to use when code page information is unavailable from the data source."
+                      expressionType="Notify"
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The method used for inserting data. Possible values are 'Batch' or 'Row by row'."
+                      expressionType="Notify"
+                      name="InsertMethod">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The ODBC C data type for binding numeric data."
+                      expressionType="Notify"
+                      name="BindNumericAs">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Determines how the component would bind columns of (multi)-byte string types (i.e., SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR). The options are: Unicode (SQL_C_WCHAR) and ANSI (SQL_C_CHAR)."
+                      expressionType="Notify"
+                      name="BindCharColumnsAs">0</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Connections[ODBCConnection]"
+                      connectionManagerID="Package.ConnectionManagers[prueba2]"
+                      connectionManagerRefId="Package.ConnectionManagers[prueba2]"
+                      description="The ODBC runtime connection used to access the database."
+                      name="ODBCConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ODBC Destination Input"
+                      truncationRowDisposition="FailComponent">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[anio]"
+                          cachedDataType="r8"
+                          cachedName="anio"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[anio]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[anio]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[mes]"
+                          cachedDataType="r8"
+                          cachedName="mes"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[mes]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[mes]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[dia]"
+                          cachedDataType="r8"
+                          cachedName="dia"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[dia]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output].Columns[dia]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].Columns[fecha_sin_hora]"
+                          cachedDataType="dbDate"
+                          cachedName="fecha_sin_hora"
+                          externalMetadataColumnId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[fecha]"
+                          lineageId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Output].Columns[fecha_sin_hora]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[tiempo_id]"
+                          dataType="i4"
+                          name="tiempo_id" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[fecha]"
+                          dataType="dbDate"
+                          name="fecha" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[anio]"
+                          dataType="i4"
+                          name="anio" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[mes]"
+                          dataType="i4"
+                          name="mes" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input].ExternalColumns[dia]"
+                          dataType="i4"
+                          name="dia" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Outputs[ODBC Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ODBC Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\dim_tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\dim_tiempo\ODBC Destination.Outputs[ODBC Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\dim_tiempo.Paths[Derived Column Output]"
+                  endId="Package\Sequence Container\dim_tiempo\ODBC Destination.Inputs[ODBC Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\Sequence Container\dim_tiempo\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Sequence Container\dim_tiempo.Paths[Excel Source Output]"
+                  endId="Package\Sequence Container\dim_tiempo\Derived Column.Inputs[Derived Column Input]"
+                  name="Excel Source Output"
+                  startId="Package\Sequence Container\dim_tiempo\Excel Source.Outputs[Excel Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{AD85BB67-425A-4ACC-BB48-E79D90F6A704}"
+      DTS:From="Package\Sequence Container"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\fact_mermaproducto" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\fact_mermaproducto"
+          TopLeft="291.666650730704,270.399998119672" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Sequence Container\dim_almacen"
+          TopLeft="2.19999590218042,5.5" />
+        <NodeLayout
+          Size="164,41.6"
+          Id="Package\Sequence Container\dim_motivomerma"
+          TopLeft="156.366654145553,9.19999793887192" />
+        <NodeLayout
+          Size="141.6,41.6"
+          Id="Package\Sequence Container\dim_producto"
+          TopLeft="334.199978418152,9.93333236303647" />
+        <NodeLayout
+          Size="132,41.6"
+          Id="Package\Sequence Container\dim_tiempo"
+          TopLeft="484.199970222514,12.5333323449554" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="633.6,67.2"
+          Size="633.6,110.4"
+          Id="Package\Sequence Container"
+          TopLeft="114.166660428875,68.466666190558" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="430.966660428875,178.866666190558">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-52.5000096981714,91.533331929114"
+              Start="0,0"
+              End="-52.5000096981714,84.033331929114">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.766665964557" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.766665964557"
+                    Point2="0,45.766665964557"
+                    Point3="-4,45.766665964557" />
+                  <mssgle:LineSegment
+                    End="-48.5000096981714,45.766665964557" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-48.5000096981714,45.766665964557"
+                    Point2="-52.5000096981714,45.766665964557"
+                    Point3="-52.5000096981714,49.766665964557" />
+                  <mssgle:LineSegment
+                    End="-52.5000096981714,84.033331929114" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\fact_mermaproducto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\fact_mermaproducto\ODBC Destination"
+          TopLeft="244.999996349215,191.999997138977" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\fact_mermaproducto\Excel Source"
+          TopLeft="217.999996751547,66.9999990016222" />
+        <EdgeLayout
+          Id="Package\fact_mermaproducto.Paths[Excel Source Output]"
+          TopLeft="287.999996751547,108.599999001622">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="38.5999995976686,83.3999981373548"
+              Start="0,0"
+              End="38.5999995976686,75.8999981373548">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.6999990686774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.6999990686774"
+                    Point2="0,41.6999990686774"
+                    Point3="4,41.6999990686774" />
+                  <mssgle:LineSegment
+                    End="34.5999995976686,41.6999990686774" />
+                  <mssgle:CubicBezierSegment
+                    Point1="34.5999995976686,41.6999990686774"
+                    Point2="38.5999995976686,41.6999990686774"
+                    Point3="38.5999995976686,45.6999990686774" />
+                  <mssgle:LineSegment
+                    End="38.5999995976686,75.8999981373548" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\fact_mermaproducto\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\fact_mermaproducto\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\dim_almacen">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Sequence Container\dim_almacen\Excel Source"
+          TopLeft="180.833323453036,50.2666663171185" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Sequence Container\dim_almacen\ODBC Destination"
+          TopLeft="253.333319491811,191.533332001434" />
+        <EdgeLayout
+          Id="Package\Sequence Container\dim_almacen.Paths[Excel Source Output]"
+          TopLeft="250.833323453036,91.8666663171185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="84.0999960387748,99.666665684316"
+              Start="0,0"
+              End="84.0999960387748,92.166665684316">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,45.833332842158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,45.833332842158"
+                    Point2="0,49.833332842158"
+                    Point3="4,49.833332842158" />
+                  <mssgle:LineSegment
+                    End="80.0999960387748,49.833332842158" />
+                  <mssgle:CubicBezierSegment
+                    Point1="80.0999960387748,49.833332842158"
+                    Point2="84.0999960387748,49.833332842158"
+                    Point3="84.0999960387748,53.833332842158" />
+                  <mssgle:LineSegment
+                    End="84.0999960387748,92.166665684316" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_almacen\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_almacen\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\dim_motivomerma">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Sequence Container\dim_motivomerma\Excel Source"
+          TopLeft="222.999996677041,136.999997958541" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Sequence Container\dim_motivomerma\ODBC Destination"
+          TopLeft="274.999995902181,261.999996095896" />
+        <EdgeLayout
+          Id="Package\Sequence Container\dim_motivomerma.Paths[Excel Source Output]"
+          TopLeft="292.999996677041,178.599997958541">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="63.5999992251396,83.3999981373549"
+              Start="0,0"
+              End="63.5999992251396,75.8999981373549">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.6999990686775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.6999990686775"
+                    Point2="0,41.6999990686775"
+                    Point3="4,41.6999990686775" />
+                  <mssgle:LineSegment
+                    End="59.5999992251396,41.6999990686775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="59.5999992251396,41.6999990686775"
+                    Point2="63.5999992251396,41.6999990686775"
+                    Point3="63.5999992251396,45.6999990686775" />
+                  <mssgle:LineSegment
+                    End="63.5999992251396,75.8999981373549" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_motivomerma\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_motivomerma\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\dim_producto">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Sequence Container\dim_producto\ODBC Destination"
+          TopLeft="249.99999627471,205.999996930361" />
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Sequence Container\dim_producto\Excel Source"
+          TopLeft="199.999997019768,73.999998897314" />
+        <EdgeLayout
+          Id="Package\Sequence Container\dim_producto.Paths[Excel Source Output]"
+          TopLeft="269.999997019768,115.599998897314">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="61.5999992549419,90.3999980330468"
+              Start="0,0"
+              End="61.5999992549419,82.8999980330468">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.1999990165234" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.1999990165234"
+                    Point2="0,45.1999990165234"
+                    Point3="4,45.1999990165234" />
+                  <mssgle:LineSegment
+                    End="57.5999992549419,45.1999990165234" />
+                  <mssgle:CubicBezierSegment
+                    Point1="57.5999992549419,45.1999990165234"
+                    Point2="61.5999992549419,45.1999990165234"
+                    Point3="61.5999992549419,49.1999990165234" />
+                  <mssgle:LineSegment
+                    End="61.5999992549419,82.8999980330468" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_producto\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_producto\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sequence Container\dim_tiempo">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Sequence Container\dim_tiempo\Excel Source"
+          TopLeft="200.999997004867,76.9999988526106" />
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\Sequence Container\dim_tiempo\Derived Column"
+          TopLeft="330.999995067716,172.999997422099" />
+        <NodeLayout
+          Size="163.2,41.6"
+          Id="Package\Sequence Container\dim_tiempo\ODBC Destination"
+          TopLeft="269.999995976686,295.999995589256" />
+        <EdgeLayout
+          Id="Package\Sequence Container\dim_tiempo.Paths[Excel Source Output]"
+          TopLeft="270.999997004867,118.599998852611">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136.399998062849,54.3999985694885"
+              Start="0,0"
+              End="136.399998062849,46.8999985694885">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.1999992847443" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.1999992847443"
+                    Point2="0,27.1999992847443"
+                    Point3="4,27.1999992847443" />
+                  <mssgle:LineSegment
+                    End="132.399998062849,27.1999992847443" />
+                  <mssgle:CubicBezierSegment
+                    Point1="132.399998062849,27.1999992847443"
+                    Point2="136.399998062849,27.1999992847443"
+                    Point3="136.399998062849,31.1999992847443" />
+                  <mssgle:LineSegment
+                    End="136.399998062849,46.8999985694885" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\dim_tiempo.Paths[Derived Column Output]"
+          TopLeft="407.399995067716,214.599997422099">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-55.7999990910295,81.3999981671572"
+              Start="0,0"
+              End="-55.7999990910295,73.8999981671572">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.6999990835786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.6999990835786"
+                    Point2="0,40.6999990835786"
+                    Point3="-4,40.6999990835786" />
+                  <mssgle:LineSegment
+                    End="-51.7999990910295,40.6999990835786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-51.7999990910295,40.6999990835786"
+                    Point2="-55.7999990910295,40.6999990835786"
+                    Point3="-55.7999990910295,44.6999990835786" />
+                  <mssgle:LineSegment
+                    End="-55.7999990910295,73.8999981671572" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_tiempo\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\dim_tiempo\ODBC Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
